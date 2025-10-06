@@ -146,7 +146,7 @@
     const container = $('#release-notes-container');
     const versionLinks = $('#version-links');
 
-    $.get('https://api.github.com/repos/mjespelita/librify-app/releases', function(data) {
+    $.get('https://api.github.com/repos/mjespelita/cdln_website/releases', function(data) {
         data.forEach((release, index) => {
             const id = `release-${index}`;
             const isLatest = index === 0; // Detect latest release
