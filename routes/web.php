@@ -10,12 +10,21 @@ use App\Http\Controllers\SmarkController;
 // end of import
 
 use App\Http\Controllers\UsersController;
+use App\Http\Middleware\AdminMiddleware;
 use App\Models\Users;
 
 // end of import
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/about-us', function () {
+    return view('site.about');
+});
+
+Route::get('/contact-us', function () {
+    return view('site.contact');
 });
 
 Route::middleware([
@@ -51,6 +60,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::middleware(AdminMiddleware::class)->group(function () {
+        Route::get('/dashboard', function () {
+            return view('dashboard');
+        })->name('dashboard');
+    });
 
     // MODEL VIEWER
 

@@ -15,14 +15,14 @@
         <!-- FontAwesome for icons -->
         <link href='{{ url('assets/font-awesome/css/all.min.css') }}' rel='stylesheet'>
         <link rel='stylesheet' href='{{ url('assets/custom/style.css') }}'>
-        <link rel='icon' href='{{ url('assets/logo.png') }}'>
+        <link rel='icon' href='{{ url('design/img/logo/logo.jpg') }}'>
     </head>
     <body class='font-sans antialiased'>
 
         <!-- Sidebar for Desktop View -->
         <div class='sidebar' id='mobileSidebar'>
             <div class='logo'>
-                <img src='{{ url('assets/logo.png') }}' alt='' width='100%'>
+                <img src='{{ url('design/img/logo/logo.jpg') }}' alt='' width='100%'>
             </div>
 
             @php
@@ -44,6 +44,12 @@
                         'icon' => 'fas fa-tachometer-alt',
                         'label' => 'Dashboard',
                         'active' => request()->is('dashboard'),
+                    ],
+                    [
+                        'url' => '/',
+                        'icon' => 'fas fa-globe',
+                        'label' => 'Visit Site',
+                        'active' => request()->is('/'),
                     ],
                     [
                         'url' => 'activity-logs',

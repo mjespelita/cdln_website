@@ -1,10 +1,30 @@
-:root {
+/* :root {
     --primary-dark: rgb(29, 0, 29);
     --primary: rgb(65, 0, 65);
     --text-light: #e3e3e3;
     --bg-light: #ffffff;
     --bg-dark: #e3e3e3;
     --border-muted: #6C757D;
+} */
+
+:root {
+    /* Brand Colors */
+    --primary-dark: #0E0E0A;      /* Deep Black for strong contrast */
+    --primary: #009801;           /* Vibrant Green - main brand color */
+
+    /* Accent & Supporting */
+    --accent: #E97102;            /* Warm Orange for highlights/buttons */
+    --secondary: #680718;         /* Deep Maroon for depth and headers */
+
+    /* Text and Background */
+    --text-light: #f5f5f5;        /* Soft white for dark backgrounds */
+    --bg-light: #ffffff;          /* Clean white background */
+    --bg-dark: #0E0E0A;           /* Primary dark background */
+    --border-muted: #bfbfbf;      /* Muted border for subtle dividers */
+
+    /* Optional Enhancements */
+    --hover-primary: #00b312;     /* Slightly brighter green on hover */
+    --text-dark: #212529;         /* Default readable dark text */
 }
 
 /* body {
