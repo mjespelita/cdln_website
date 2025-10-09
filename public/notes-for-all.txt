@@ -42,3 +42,46 @@ public function transformAudit(array $data): array
 }
 
 Remaining ------------------------------------------------------------------------------------------------------------
+
+Features
+
+1. Homepage
+
+- Clean and professional layout with the school’s logo, colors, and mission.
+
+- Quick summary of upcoming events, announcements, and highlights.
+
+- Photo carousel or hero banner with current campus news or achievements.
+
+2. About Section
+
+- School history, mission, vision, and core values.
+
+- Message from the principal or school head.
+
+- Accreditation, achievements, and affiliations.
+
+3. Contact Information
+
+- Map integration (Google Maps).
+
+- Address, contact numbers, and official email.
+
+- Contact form (for inquiries, admissions, or feedback).
+
+📰 Dynamic Content (Always Updated)
+4. Announcements / News Board
+
+- For posting official updates, important notices, and general news.
+
+- Can include filters (e.g. “For Students”, “For Parents”, “For Staff”).
+
+- Optional file attachments (PDF circulars, memos, etc.).
+
+5. Events Calendar
+
+- Upcoming school events, exams, holidays, and deadlines.
+
+- Integration with a calendar UI (e.g. FullCalendar.js).
+
+- Option to view by day/week/month.
